@@ -1,15 +1,14 @@
 # Fizzyo dashboard prototype
 
-Includes complete Bootstrap 4.0.0-alpha6 dev environment with gulp and sass
+## Usage
 
-### Version
-
-1.0.0
+Add styles to ```src/scss/_custom.scss```.
+See index.html for template.
 
 ## Install Dependencies
 
 ```bash
-npm install 
+npm install
 ```
 
 ## Compile Sass & Run Dev Server
