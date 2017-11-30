@@ -1,1 +1,100 @@
-// core overrides
+.card-content {
+    display: flex;
+    flex-direction: column;
+
+    .card-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        h4 {
+            margin: 0;
+        }
+
+        div {
+            margin-left: auto;
+        }
+    }
+
+    i.win {
+        text-align: center;
+        color: #FEFB67;
+        margin-bottom: 16px;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    button {
+        margin-top: 16px;
+    }
+
+    .img {
+        border-radius: 500px;
+        width: 224px;
+        height: 224px;
+        border: 8px solid #DEDEDE;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    ul {
+        margin-bottom: 16px;
+    }
+
+    h4 {
+        margin-bottom: 16px;
+    }
+}
+
+.session-item {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 16px;
+
+    border: 1px solid rgba(0, 0, 0, 0.125);
+
+    .item-indicator {
+        width: 32px;
+
+        &.good {
+            background: #40C248;
+        }
+
+        &.bad {
+            background: #FA4E3B;
+        }
+    }
+
+    .item-content {
+        flex: 1;
+        .content-header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            padding: 8px;
+
+            font-weight: bold;
+            font-size: 14px;
+
+            border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+
+            span {
+                margin-left: auto;
+            }
+        }
+        .content-content {
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+
+            button {
+                margin-top: 8px;
+                margin-left: auto;
+            }
+        }
+    }
+}
