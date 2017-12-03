@@ -5722,7 +5722,7 @@ a.text-light:focus, a.text-light:hover {
 a.text-dark:focus, a.text-dark:hover {
   color: #151b1f !important; }
 
-.text-muted {
+.text-muted, .card-content .data {
   color: #536c79 !important; }
 
 .text-hide {
@@ -5738,6 +5738,18 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
+.card-welcome {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px; }
+  .card-welcome h2 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 34px; }
+  .card-welcome .dropdown {
+    margin-left: auto; }
+
 .card-content {
   display: flex;
   flex-direction: column; }
@@ -5749,25 +5761,64 @@ a.text-dark:focus, a.text-dark:hover {
       margin: 0; }
     .card-content .card-title div {
       margin-left: auto; }
-  .card-content i.win {
-    text-align: center;
-    color: #FEFB67;
-    margin-bottom: 16px; }
-  .card-content h3 {
-    text-align: center; }
-  .card-content button {
-    margin-top: 16px; }
   .card-content .img {
     border-radius: 500px;
     width: 224px;
     height: 224px;
     border: 8px solid #DEDEDE;
     margin-right: auto;
-    margin-left: auto; }
+    margin-left: auto;
+    margin-bottom: 16px; }
+  .card-content .title {
+    font-weight: bold;
+    text-align: right; }
+  .card-content .data {
+    margin: auto;
+    text-align: left; }
+  .card-content i.win {
+    text-align: center;
+    color: #FEFB67;
+    margin-bottom: 16px; }
+  .card-content h3 {
+    text-align: center; }
   .card-content ul {
     margin-bottom: 16px; }
   .card-content h4 {
     margin-bottom: 16px; }
+  .card-content .btn-margin {
+    margin-top: 16px; }
+
+.achievement-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.125); }
+  .achievement-item .item-header {
+    min-height: 100px;
+    background: url("http://cdn.osxdaily.com/wp-content/uploads/2015/06/os-x-el-capitan-widescreen-wallpaper-610x290.jpg") no-repeat center center;
+    background-size: cover;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+  .achievement-item .item-content {
+    padding: 8px; }
+    .achievement-item .item-content h3 {
+      font-size: 16px;
+      text-align: left;
+      margin-bottom: 4px;
+      font-weight: bold; }
+    .achievement-item .item-content h4 {
+      font-size: 16px;
+      margin: 0;
+      color: rgba(0, 0, 0, 0.34); }
+
+.session-brief {
+  background-color: #FAFAFA;
+  margin-bottom: 16px; }
+  .session-brief:last-child {
+    margin-bottom: 0; }
+
+.graph-header {
+  font-size: 16px;
+  font-weight: bold; }
 
 .session-item {
   display: flex;
@@ -5796,9 +5847,37 @@ a.text-dark:focus, a.text-dark:hover {
       padding: 8px;
       display: flex;
       flex-direction: column; }
-      .session-item .item-content .content-content button {
+      .session-item .item-content .content-content a {
         margin-top: 8px;
         margin-left: auto; }
+
+.thead-default {
+  background-color: #c2cfd6; }
+
+a i {
+  margin-right: 4px; }
+
+.patient-icon {
+  max-width: 100px;
+  width: 100%; }
+
+li h5 {
+  margin: 0; }
+
+li .patient-icon {
+  max-width: 50px;
+  width: 100%;
+  border-radius: 100px; }
+
+.btn-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
+.p-0 {
+  text-align: right; }
+  .p-0 a {
+    margin-top: 8px; }
 
 body {
   -moz-osx-font-smoothing: grayscale;
@@ -7007,7 +7086,7 @@ button {
       background-color: #232e34;
       border-color: #0f1417; }
 
-.text-white .text-muted {
+.text-white .text-muted, .text-white .card-content .data, .card-content .text-white .data {
   color: rgba(255, 255, 255, 0.6) !important; }
 
 .card-header .icon-bg {

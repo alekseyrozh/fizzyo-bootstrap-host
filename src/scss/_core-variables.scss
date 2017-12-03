@@ -1,3 +1,21 @@
+.card-welcome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 16px;
+
+    h2 {
+        font-weight: bold;
+        margin: 0;
+        font-size: 34px;
+    }
+
+    .dropdown {
+        margin-left: auto;
+    }
+}
+
 .card-content {
     display: flex;
     flex-direction: column;
@@ -16,6 +34,28 @@
         }
     }
 
+    .img {
+        border-radius: 500px;
+        width: 224px;
+        height: 224px;
+        border: 8px solid #DEDEDE;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 16px;
+    }
+
+    .title {
+        //@extend .p-1;
+        font-weight: bold;
+        text-align: right;
+    }
+
+    .data {
+        @extend .text-muted; //@extend .p-1;
+        margin: auto;
+        text-align: left;
+    }
+
     i.win {
         text-align: center;
         color: #FEFB67;
@@ -26,19 +66,6 @@
         text-align: center;
     }
 
-    button {
-        margin-top: 16px;
-    }
-
-    .img {
-        border-radius: 500px;
-        width: 224px;
-        height: 224px;
-        border: 8px solid #DEDEDE;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
     ul {
         margin-bottom: 16px;
     }
@@ -46,6 +73,60 @@
     h4 {
         margin-bottom: 16px;
     }
+
+    .btn-margin {
+        margin-top: 16px;
+    }
+}
+
+.achievement-item {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 16px;
+
+    border: 1px solid rgba(0, 0, 0, 0.125);
+
+    .item-header {
+        min-height: 100px;
+
+        background: url("http://cdn.osxdaily.com/wp-content/uploads/2015/06/os-x-el-capitan-widescreen-wallpaper-610x290.jpg") no-repeat center center;
+        background-size: cover;
+
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    }
+
+    .item-content {
+        padding: 8px;
+
+        h3 {
+            font-size: 16px;
+            text-align: left;
+            margin-bottom: 4px;
+
+            font-weight: bold;
+        }
+
+        h4 {
+            font-size: 16px; //font-weight: bold;
+            margin: 0;
+
+            color: rgba(0, 0, 0, 0.34);
+        }
+    }
+}
+
+.session-brief {
+    background-color: #FAFAFA;
+    margin-bottom: 16px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.graph-header {
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .session-item {
@@ -91,10 +172,50 @@
             display: flex;
             flex-direction: column;
 
-            button {
+            a {
                 margin-top: 8px;
                 margin-left: auto;
             }
         }
     }
+}
+
+.thead-default {
+    background-color: #c2cfd6;
+}
+
+a {
+    i {
+        margin-right: 4px;
+    }
+}
+
+
+.patient-icon {
+    max-width: 100px;
+    width: 100%;
+}
+
+li {
+    h5 {
+        margin: 0;
+    }
+    .patient-icon {
+        max-width: 50px;
+        width: 100%;
+        border-radius: 100px;
+    }
+}
+
+.btn-bottom {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.p-0 {
+	text-align: right;
+	a {
+		margin-top: 8px;
+	}
 }
