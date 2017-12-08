@@ -5722,7 +5722,7 @@ a.text-light:focus, a.text-light:hover {
 a.text-dark:focus, a.text-dark:hover {
   color: #151b1f !important; }
 
-.text-muted, .card-content .data {
+.text-muted, .card-content .data, .data {
   color: #536c79 !important; }
 
 .text-hide {
@@ -7086,7 +7086,7 @@ button {
       background-color: #232e34;
       border-color: #0f1417; }
 
-.text-white .text-muted, .text-white .card-content .data, .card-content .text-white .data {
+.text-white .text-muted, .text-white .data {
   color: rgba(255, 255, 255, 0.6) !important; }
 
 .card-header .icon-bg {
@@ -9110,3 +9110,59 @@ hr.transparent {
       float: left; }
   *[dir="rtl"] .callout-default {
     border-right-color: #536c79; }
+
+.ololo {
+  font-size: 1;
+  color: blue; }
+
+.patient-icon {
+  max-width: 100px;
+  width: 100%; }
+
+li .patient-icon {
+  max-width: 50px;
+  width: 100%; }
+
+.title {
+  font-weight: bold;
+  text-align: right; }
+
+.data {
+  margin: auto;
+  text-align: left; }
+
+.session-brief {
+  margin-top: 10px;
+  margin-bottom: 15px; }
+
+.btn-info {
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8; }
+
+.btn-info:hover {
+  color: #fff;
+  background-color: #138496;
+  border-color: #117a8b; }
+
+.btn-info.focus,
+.btn-info:focus {
+  box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5); }
+
+.btn-info.disabled,
+.btn-info:disabled {
+  background-color: #17a2b8;
+  border-color: #17a2b8; }
+
+.btn-info:not([disabled]):not(.disabled).active,
+.btn-info:not([disabled]):not(.disabled):active,
+.show > .btn-info.dropdown-toggle {
+  color: #fff;
+  background-color: #117a8b;
+  border-color: #10707f;
+  box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5); }
+
+.patient-list-scroll {
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 600px; }

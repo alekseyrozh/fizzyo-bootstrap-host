@@ -1,2 +1,76 @@
 // Here you can add other styles
 @import 'vendors/bootstrap-datetimepicker.min.css';
+
+
+.ololo {
+  font-size: 1;
+  color: blue;
+}
+
+.patient-icon {
+  max-width: 100px;
+  width: 100%;
+}
+
+li .patient-icon {
+  max-width: 50px;
+  width: 100%;
+}
+
+.patient-info {}
+
+.title {
+  //@extend .p-1;
+  font-weight: bold;
+  text-align: right;
+}
+
+.data {
+  @extend .text-muted;
+  //@extend .p-1;
+  margin: auto;
+  text-align: left;
+}
+
+.session-brief {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+//copied from bootstrap
+.btn-info {
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.btn-info:hover {
+  color: #fff;
+  background-color: #138496;
+  border-color: #117a8b;
+}
+
+.btn-info.focus,
+.btn-info:focus {
+  box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+}
+
+.btn-info.disabled,
+.btn-info:disabled {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.btn-info:not([disabled]):not(.disabled).active,
+.btn-info:not([disabled]):not(.disabled):active,
+.show > .btn-info.dropdown-toggle {
+  color: #fff;
+  background-color: #117a8b;
+  border-color: #10707f;
+  box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+}
+
+.patient-list-scroll {
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 600px;
+}
