@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Bootstrap 4 Starter</title>
+</head>
+
+<body class="app header-fixed">
+  <header class="app-header navbar">
+    <ul class="nav navbar-nav d-md-down-none">
+      <li class="nav-item px-3 active">
+        <a class="nav-link">Individual</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="researcher.group.html">Group</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav ml-auto" style="padding-right: 8px;">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                  <img src="img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                </a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <div class="dropdown-header text-center">
+            <strong>Account</strong>
+          </div>
+          <a class="dropdown-item" href="#"><i class="fa fa-bell-o"></i> Updates<span class="badge badge-info">42</span></a>
+          <a class="dropdown-item" href="#"><i class="fa fa-envelope-o"></i> Messages<span class="badge badge-success">42</span></a>
+          <a class="dropdown-item" href="#"><i class="fa fa-tasks"></i> Tasks<span class="badge badge-danger">42</span></a>
+          <a class="dropdown-item" href="#"><i class="fa fa-comments"></i> Comments<span class="badge badge-warning">42</span></a>
+          <div class="dropdown-header text-center">
+            <strong>Settings</strong>
+          </div>
+          <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
+          <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> Settings</a>
+          <a class="dropdown-item" href="#"><i class="fa fa-usd"></i> Payments<span class="badge badge-secondary">42</span></a>
+          <a class="dropdown-item" href="#"><i class="fa fa-file"></i> Projects<span class="badge badge-primary">42</span></a>
+          <div class="divider"></div>
+          <a class="dropdown-item" href="#"><i class="fa fa-shield"></i> Lock Account</a>
+          <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
+        </div>
+      </li>
+    </ul>
+  </header>
+  <div class="app-body">
+    <!-- Main content -->
+    <main class="main">
+      <!-- Breadcrumb -->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="researcher.main-screen.html">Main</a></li>
+        <li class="breadcrumb-item"><a href="researcher.patient.day.html">Day Overview</a></li>
+        <li class="breadcrumb-item">Game Info</li>
+      </ol>
+      <div class="container-fluid">
+        <div class="animated fadeIn">
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <a href="researcher.patient.day.html" type="button" class="btn btn-primary btn-block"><i class="fa fa-caret-left" aria-hidden="true"></i>Go back</a>
+                </div>
+              </div>
+              <div class="card">
+                <h4 class="card-header">Session summary</h4>
+                <div class="card-body">
+                  <div class="card-content">
+                    <div class="session-item">
+                      <div class="item-indicator good"></div>
+                      <div class="item-content">
+                        <div class="content-header">
+                          9:05 am <span><i class="fa fa-clock-o" aria-hidden="true"></i> 20 min</span>
+                        </div>
+                        <div class="content-content">
+                          83% good breaths
+                        </div>
+                      </div>
+                    </div>
+                    <h4 class="graph-header" style="margin-top: 16px;">Breath quality</h4>
+                    <canvas id="sess-count" width="100%" height="50%"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <h4 class="card-header">Tilly's Achievements</h4>
+                <div class="card-body">
+                  <div class="card-content">
+                    <div class="achievement-item">
+                      <div class="item-header">
+                      </div>
+                      <div class="item-content">
+                        <h3>Some goal 1</h3>
+                        <h4>Unlocked: 20/09/2007</h4>
+                      </div>
+                    </div>
+                    <div class="achievement-item">
+                      <div class="item-header">
+                      </div>
+                      <div class="item-content">
+                        <h3>Some goal 2</h3>
+                        <h4>Unlocked: 20/09/2007</h4>
+                      </div>
+                    </div>
+                    <div class="achievement-item">
+                      <div class="item-header">
+                      </div>
+                      <div class="item-content">
+                        <h3>Some goal 3</h3>
+                        <h4>Unlocked: 20/09/2007</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <h4 class="card-header">Leaderboard</h4>
+                <div class="card-body">
+                  <div class="card-content">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Name</th>
+                          <th>Points</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>30</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Larry</td>
+                          <td>40</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td>Larry</td>
+                          <td>50</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th colspan="3">My Ranking</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Tilly</td>
+                          <td>10</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.conainer-fluid -->
+    </main>
+    </div>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/chart.bundle.min.js"></script>
+    <script src="js/vendor/bootstrap-datetimepicker.min.js"></script>
+    <!-- CoreUI main scripts -->
+    <script src="js/app.js"></script>
+    <!-- Plugins and scripts required by this views -->
+    <!-- Custom scripts required by this view -->
+    <script src="js/views/second.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('#datetimepicker1').datetimepicker({
+          language: 'pt-BR'
+        });
+      });
+    </script>
+</body>
+
+</html>
